@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/style.css">
    <title>Document</title>
 </head>
@@ -11,25 +12,36 @@
       <header class="header">
          <div class="container">
             <ul class="left-menu">
-               <li><a href="#">ABOUT US</a></li>
-               <li><a href="#">WORK</a></li>
+               <li><a href="#about">ABOUT US</a></li>
+               <li><a href="#work">WORK</a></li>
             </ul>
             <a href="/" class="logo">
                <img src="images/logo.png" alt="Bicycle">
             </a>
             <ul class="right-menu">
-               <li><a href="#">SHOP</a></li>
-               <li><a href="#">CONTACT</a></li>
+               <li><a href="#shop">SHOP</a></li>
+               <li><a href="#contact">CONTACT</a></li>
             </ul>
          </div>
       </header>
       <main>
          <section class="section main-slider">
-            <img class="slide" src="images/banner1.png" alt="slide 1">
+            <div class="swiper-container">               
+               <div class="swiper-wrapper">
+                  
+                   <div class="swiper-slide"><img class="slide" src="images/banner1.png" alt="slide 1"></div>
+                   <div class="swiper-slide"><img class="slide" src="images/slide.jpg" alt=""></div>
+                   <div class="swiper-slide"><img class="slide" src="images/slide2.jpg" alt=""></div>
+                   
+               </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>           
+               </div>            
          </section>
-      </main>
+      
       <div class="container">
-        <div class="grey first">
+        <div class="grey first" id="about">
          <div class="info">
             <div class="block">
                <img src="images/Icon1.png" alt="">
@@ -39,7 +51,7 @@
          </div>
         </div>
       </div>
-      <div class=" container banners">
+      <div class=" container banners" id="work">
          <div class="image big">
             <img src="images/Img-01.png" alt="">
             <img class="position" src="images/bike.png" alt="">
@@ -57,7 +69,7 @@
                </div>
          </div>
      </div>
-         
+    
       <div class="container banners">
          <div class="text">
             <div class="info">
@@ -76,10 +88,10 @@
             <img class="position" src="images/bike2.png" alt="">
          </div>
       </div>
-      <div class="container">
+     <div class="container">
          <div class="three">
             <div class="blocks bicycle">
-               <img  src="images/img5.png" alt="">
+               <img class="picture" src="images/img5.png" alt="">
                <img class="absolute" src="images/bike3.png" alt="">
             </div>
             <div class="blocks">
@@ -88,26 +100,140 @@
                      <h2>retrobike - m. hulot</h2>
                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                </div>
-               <div class="image">
+               <div class="picture image">
                   <img src="images/img6.png" alt="">
                </div>
             </div>
             <div class="blocks">
-               <img src="images/img7.png" alt="">
+               <img class="picture" src="images/img7.png" alt="">
             </div>
          </div>
       </div>
+      
       <div class="container">
-        <div class="grey twitter">
-         <div class="info">
-            <div class="block">
-               <img src="images/twitter.png" alt="">
-               <h2>AOD New York @aod<span> / 35min</span></h2> 
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet. </p>
+         <div class="review-container">            
+            <div class="swiper-wrapper">                        
+               <div class="info swiper-slide">
+                  <div class="grey twitter">  
+                     <div class="block">
+                        <img src="images/twitter.png" alt="">
+                        <h2>AOD New York @aod<span> / 35min</span></h2> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet. </p>
+                     </div>
+                  </div>           
+               </div>
+                <div class="swiper-slide">
+                     <img src="images/Img-03.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="images/img6.png" alt="">
+                  </div>               
             </div>
+               <div class="swiper-pagination"></div>
          </div>
-        </div>
+      </div>
+      <section class="section shop" id="shop">
+         <div class="container">
+             <div class="row">
+                 <div class="col-33">
+                     <div class="row">
+                         <div class="col-50 square">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell1.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                         <div class="col-50 square">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell2.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-100">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell3.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-33">
+                     <div class="row full-height">
+                         <div class="col-50 full-height">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell4.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                         <div class="col-50 full-height">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell5.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-33">
+                     <div class="row">
+                         <div class="col-100">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell6.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-50 square">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell7.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                         <div class="col-50 square">
+                             <a href="#">
+                                 <img class="full-image" src="images/cell8.jpg" alt="img">
+                                 <div class="shop-now">
+                                     <img src="images/shop-icon.png" alt="shop now">
+                                     <span>Shop now</span>
+                                 </div>
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+   </main>
+   <footer class="footer">
+      
+   </footer>
       </div>
    </div>
+   <script src="js/jquery.3.5.1. min.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/scripts.js"></script>
 </body>
 </html>
