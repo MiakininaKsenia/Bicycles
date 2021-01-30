@@ -5,23 +5,32 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="images/logo.png" type="image/png">
    <title>Document</title>
 </head>
 <body>
    <div class="wrapper">
       <header class="header">
          <div class="container">
-            <ul class="left-menu">
-               <li><a href="#about">ABOUT US</a></li>
-               <li><a href="#work">WORK</a></li>
+            <div class="navigation">
+              <ul class="left-menu">
+               <li><a href="#about" class="js-anchor">ABOUT US</a></li>
+               <li><a href="#work" class="js-anchor">WORK</a></li>
             </ul>
             <a href="/" class="logo">
                <img src="images/logo.png" alt="Bicycle">
             </a>
             <ul class="right-menu">
-               <li><a href="#shop">SHOP</a></li>
-               <li><a href="#contact">CONTACT</a></li>
+               <li><a href="#shop" class="js-anchor">SHOP</a></li>
+               <li><a href="#contact" class="js-anchor">CONTACT</a></li>
             </ul>
+           </div>
+             <span class="menu-button">
+               <span></span>
+             </span>
+             <a href="/" class="logo mobile-logo">
+               <img src="images/logo.png" alt="Bicycle">
+             </a>
          </div>
       </header>
       <main>
@@ -63,10 +72,11 @@
                   <h2>vintage oliva</h2>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                </div>
-            </div>
-               <div class="image small">
-                  <img src="images/img2.png" alt="">
-               </div>
+            </div>               
+                  <div class="image small treangle">
+                     <img src="images/img2.png" alt="">
+                  </div>
+               
          </div>
      </div>
     
@@ -79,9 +89,9 @@
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                </div>
             </div>
-               <div class="image small">
+               <div class="image small treangle">            
                   <img src="images/Img-03.png" alt="">
-               </div>
+               </div>               
          </div>
          <div class="image big second">
             <img src="images/img4.png" alt="">
@@ -100,7 +110,7 @@
                      <h2>retrobike - m. hulot</h2>
                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
                </div>
-               <div class="picture image">
+               <div class="mavic image">
                   <img src="images/img6.png" alt="">
                </div>
             </div>
@@ -122,12 +132,24 @@
                      </div>
                   </div>           
                </div>
-                <div class="swiper-slide">
-                     <img src="images/Img-03.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                     <img src="images/img6.png" alt="">
-                  </div>               
+                <div class="info swiper-slide">
+                  <div class="grey twitter">  
+                     <div class="block">
+                        <img src="images/twitter.png" alt="">
+                        <h2>AOD New York @aod<span> / 35min</span></h2> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet. </p>
+                     </div>
+                  </div>           
+               </div>
+               <div class="info swiper-slide">
+                  <div class="grey twitter">  
+                     <div class="block">
+                        <img src="images/twitter.png" alt="">
+                        <h2>AOD New York @aod<span> / 35min</span></h2> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet. </p>
+                     </div>
+                  </div>           
+               </div>      
             </div>
                <div class="swiper-pagination"></div>
          </div>
@@ -135,8 +157,8 @@
       <section class="section shop" id="shop">
          <div class="container">
              <div class="row">
-                 <div class="col-33">
-                     <div class="row">
+                 <div class="col-33 first-33">
+                     <div class="row row-first">
                          <div class="col-50 square">
                              <a href="#">
                                  <img class="full-image" src="images/cell1.jpg" alt="img">
@@ -156,7 +178,7 @@
                              </a>
                          </div>
                      </div>
-                     <div class="row">
+                     <div class="row row-second">
                          <div class="col-100">
                              <a href="#">
                                  <img class="full-image" src="images/cell3.jpg" alt="img">
@@ -168,7 +190,7 @@
                          </div>
                      </div>
                  </div>
-                 <div class="col-33">
+                 <div class="col-33 second">
                      <div class="row full-height">
                          <div class="col-50 full-height">
                              <a href="#">
@@ -191,7 +213,7 @@
                      </div>
                  </div>
                  <div class="col-33">
-                     <div class="row">
+                     <div class="row row-second">
                          <div class="col-100">
                              <a href="#">
                                  <img class="full-image" src="images/cell6.jpg" alt="img">
@@ -202,7 +224,7 @@
                              </a>
                          </div>
                      </div>
-                     <div class="row">
+                     <div class="row row-first">
                          <div class="col-50 square">
                              <a href="#">
                                  <img class="full-image" src="images/cell7.jpg" alt="img">
@@ -224,15 +246,44 @@
                      </div>
                  </div>
              </div>
+             <div class="discover">
+                <a href="#"><p>discover the shop</p></a>
+             </div>
+         </div>         
+     </section>
+     <section class="contact" id="contact">
+         <div class="container">
+            <div class="mailing">
+               <img src="images/logo.png" alt="logo">
+               <p>Stay on the saddle!</p>
+               <form method="POST">
+                  <input type='email' id="form" name="email" placeholder="enter your email..." required>
+                  <button id="button">GO</button>
+               </form>
+            </div>
          </div>
      </section>
    </main>
    <footer class="footer">
-      
-   </footer>
+      <div class="about-us">
+         <div class="first-column">
+            <h4>AOD New York</h4>
+            <p>2250 Lexington Avenue</p>
+            <p>New York, NY 10035 - <a href="mailto:info@domain.com"> info@domain.com</a></p>
+         </div>
+         <div class="second-column">
+           <a href="#"><img src="images/Vector-Smart-Object2.png" alt="twitter"></a> 
+           <a href="#"> <img id="image" src="images/Vector-Smart-Object1.png" alt="facebook"></a>
+           <a href="#"> <img src="images/Vector-Smart-Object.png" alt="social"></a>
+         </div>
+         <div class="third-column">
+             Handcrafted by <img src="images/Y-E-B-O-Logo.png" alt="">
+         </div>
       </div>
+   </footer>
+      
    </div>
-   <script src="js/jquery.3.5.1. min.js"></script>
+   <script src="js/jquery.3.5.1.min.js"></script>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="js/scripts.js"></script>
 </body>

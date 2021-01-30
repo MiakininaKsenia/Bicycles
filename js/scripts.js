@@ -14,6 +14,8 @@
       }
      
     });
+
+    //mobile menu
     var mySwiper = new Swiper('.review-container', {
       loop: true,
       pagination: {
@@ -25,5 +27,18 @@
      }
     
    })
+    $('.header').on( 'click', '.menu-button', function() {
+        $('.header').toggleClass('menu-opened');
+    });
+
+    // Anchor links
+    
+      $( ".js-anchor" ).click(function( event ) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
+      });
+  
+
+
   });
    
